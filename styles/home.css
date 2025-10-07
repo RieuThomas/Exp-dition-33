@@ -1,0 +1,27 @@
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/background/Expedition-33-article-banniere-2.webp");
+    background-size: cover;
+    opacity: 0.5;
+    filter: blur(2px);
+    height: calc(100vh - 208px);
+    margin: 24px 0px;
+}
+
+main p {
+    position: absolute;
+    top: 40vh;
+    left: 50vh;
+    color: white;
+    width: 50%;
+    line-height: 1.5;
+
+}
+
+main p strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}

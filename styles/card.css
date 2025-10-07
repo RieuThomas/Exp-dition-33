@@ -1,0 +1,151 @@
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+main section {
+    padding: 16px;
+    margin: 48px;
+    border-top: solid var(--secondary-color) 2px;
+}
+
+main section.characters article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 240px;
+    margin-top: 16px;
+    padding: 16px;
+}
+
+main section.characters article div img {
+    width: 240px;
+}
+
+main section.characters article div audio {
+    height: 24px;
+    color: black;
+
+}
+
+main section.characters article div p {
+    width: 400px;
+    line-height: 1.5;
+
+}
+
+main section.characters article div button {
+
+    font-family: var(--font-text);
+    color: var(--fourth-color);
+    background: var(--fourth-color);
+    border: none;
+
+}
+
+main section.characters article div button:active {
+    color: var(--fifth-color);
+}
+
+
+main section.characters article strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+main section.skills {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 16px;
+}
+
+main section.skills h2 {
+    grid-column: span 8;
+
+}
+
+main section.skills article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 240px;
+    width: 160px;
+}
+
+main section.skills article img {
+    height: 100px;
+    width: 100px;
+}
+
+main section.weapons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+main section.weapons h2 {
+    grid-column: span 6;
+
+}
+
+main section article {
+    text-align: center;
+    background-color: rgba(60, 60, 60, 0.5);
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+
+main section article:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 11px 5px rgba(120, 120, 120, 0.7);
+}
+
+main section.weapons article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 280px;
+}
+
+main section.weapons article img {
+    transition: all .5s ease-in-out;
+    padding: 0px 72px;
+}
+
+main section.weapons article img:hover {
+    transform: rotate(360deg)
+}
+
+main section#gustave-weapons article img,
+main section#verso-weapons article img {
+    width: 64px;
+    height: 240px;
+
+}
+
+
+main section#lune-weapons article img {
+    width: 120px;
+    height: 136px;
+    padding: 0;
+}
+
+main section#maelle-weapons article img {
+    width: 104px;
+    height: 120px;
+    padding: 0;
+}
+
+main section#sciel-weapons article img {
+    width: 104px;
+    height: 120px;
+    padding: 0;
+}
+
+main section#monoco-weapons article img {
+    width: 104px;
+    height: 120px;
+    padding: 0;
+}

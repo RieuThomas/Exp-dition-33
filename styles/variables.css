@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #ab966f;
+    --secondary-color: #85714b;
+    --third-color: rgba(0, 0, 0, 0.9);
+    --fourth-color: rgba(60, 60, 60, 0.5);
+    --fifth-color: #b4b2b0;
+
+    --font-title: "Cinzel", serif;
+    --font-text: "IM Fell Double Pica", serif;
+
+}
