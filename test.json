@@ -1,0 +1,2271 @@
+[ {
+  "character": "Gustave",
+  "skills": [
+  {
+    "Name": "From Fire",
+    "Description": "Deals medium single target damage (3 hits) using weapon's element. Heals self by 20% if the target is Burned.",
+    "APCost": 4
+  },
+  {
+    "Name": "Lumiere Assault",
+    "Description": "Deals low single target damage (5 hits) using weapon's element. Critical hits generate 1 Additional Charge.",
+    "APCost": 3
+  },
+  {
+    "Name": "Marking Shot",
+    "Description": "Deals low single target Lightning damage (1 hit). Applies Mark to the target.",
+    "APCost": 2
+  },
+  {
+    "Name": "Overcharge",
+    "Description": "Deals high Lightning damage based on the number of Charges (1 hit). Can Break enemies.",
+    "APCost": 4
+  },
+  {
+    "Name": "Powerful",
+    "Description": "Applies Powerful to 1–3 allies, increasing their damage for 3 turns. Grants 0–2 Charges.",
+    "APCost": 3
+  },
+  {
+    "Name": "Recovery",
+    "Description": "Recovers 50% Health and dispels Status Effects. Grants 0–2 Charges.",
+    "APCost": 3
+  },
+  {
+    "Name": "Shatter",
+    "Description": "Deals high Lightning damage to all enemies (1 hit). Can Break. If a target is Broken by this hit, Overcharge becomes fully Charged.",
+    "APCost": 5
+  },
+  {
+    "Name": "Strike Storm",
+    "Description": "Deals very high single target damage (6 hits) using weapon's element. Critical hits generate 2 Additional Charges.",
+    "APCost": 7
+  }
+],
+  "weapons" : [
+    [
+  {
+    "Name": "Abysseram",
+    "Element": "Physical",
+    "Power": 3228,
+    "Attributes": {"Vitality": "S", "Defense": "A"},
+    "PassiveEffects": {
+      "Lvl4": "50% increased damage on Rank D. No damage increase on other ranks.",
+      "Lvl10": "50% increased Base Attack damage.",
+      "Lvl20": "On Rank D, recover 20% Health with Base Attack."
+    }
+  },
+  {
+    "Name": "Blodam",
+    "Element": "Light",
+    "Power": 3487,
+    "Attributes": {"Defense": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Perfection is now based on current Health. Gain 1 Rank every 20% missing Health.",
+      "Lvl10": "20% increased Light damage with Skills.",
+      "Lvl20": "+1 AP on Rank Up."
+    }
+  },
+  {
+    "Name": "Chevalam",
+    "Element": "Physical",
+    "Power": 3067,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Start battle at Rank S, but can't be Healed or gain Shields.",
+      "Lvl10": "20% increased damage for each consecutive turn without taking damage. Can stack up to 5 times.",
+      "Lvl20": "Apply Rush on Rank S."
+    }
+  },
+  {
+    "Name": "Confuso",
+    "Element": "Light",
+    "Power": 3067,
+    "Attributes": {"Agility": "A", "Luck": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Light damage can Burn on Critical hits.",
+      "Lvl10": "Apply 3 Burn instead of Mark.",
+      "Lvl20": "Increase Burn damage by 50% per Rank, up to 300% on Rank S."
+    }
+  },
+  {
+    "Name": "Contorso",
+    "Element": "Lightning",
+    "Power": 2841,
+    "Attributes": {"Defense": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Switch to Rank S on Break. Base Attack can Break.",
+      "Lvl10": "100% Critical Chance on Rank S.",
+      "Lvl20": "Triggers a lightning strike on Critical hits."
+    }
+  },
+  {
+    "Name": "Corpeso",
+    "Element": "Fire",
+    "Power": 3648,
+    "Attributes": {"Vitality": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Base Attack applies 2 Burn stack per Rank.",
+      "Lvl10": "+1 AP on Rank Up.",
+      "Lvl20": "Increase Burn damage by 50% per Rank, up to 300% on Rank S."
+    }
+  },
+  {
+    "Name": "Cruleram",
+    "Element": "Ice",
+    "Power": 3454,
+    "Attributes": {"Defense": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Don't lose Rank when taking damage from Powerless enemies.",
+      "Lvl10": "+1 Perfection on hitting a Powerless enemy.",
+      "Lvl20": "Apply Powerless on Counterattack."
+    }
+  },
+  {
+    "Name": "Cultam",
+    "Element": "Dark",
+    "Power": 3132,
+    "Attributes": {"Defense": "S", "Agility": "A"},
+    "PassiveEffects": {
+      "Lvl4": "No Perfection loss on damage taken. Perfection is instead lost on being Healed.",
+      "Lvl10": "Gain 2 AP on Counterattack.",
+      "Lvl20": "Gain 1 Rank on Counterattack."
+    }
+  },
+  {
+    "Name": "Danseso",
+    "Element": "Fire",
+    "Power": 2970,
+    "Attributes": {"Agility": "A", "Luck": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Base attack gives 1 Perfection per Burn on target.",
+      "Lvl10": "While Powerful, 20% chance to Burn on hit.",
+      "Lvl20": "+1 AP on Rank Up."
+    }
+  },
+  {
+    "Name": "Delaram",
+    "Element": "Light",
+    "Power": 3390,
+    "Attributes": {"Vitality": "A", "Luck": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Start battle on Rank B, but 50% Health.",
+      "Lvl10": "Recover 15% Health on Base Attack.",
+      "Lvl20": "Apply Powerful on Rank B."
+    }
+  },
+  {
+    "Name": "Demonam",
+    "Element": "Light",
+    "Power": 2809,
+    "Attributes": {"Defense": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Casting a Light Skill increases damage of next Physical Skill cast by 50% and vice versa.",
+      "Lvl10": "20% increased Physical damage with Skills.",
+      "Lvl20": "Dealing Light damage with a Skill recovers 3% Health."
+    }
+  },
+  {
+    "Name": "Dreameso",
+    "Element": "Physical",
+    "Power": 3067,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Gain 1 Rank on Counterattack",
+      "Lvl10": "50% increased Counterattack damage.",
+      "Lvl20": "Gain 2 AP on Counterattack."
+    }
+  },
+  {
+    "Name": "Dualiso",
+    "Element": "Lightning",
+    "Power": 1776,
+    "Attributes": {"Vitality": "A", "Defense": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Play again after a Base Attack.",
+      "Lvl10": "50% increased Base Attack damage.",
+      "Lvl20": "Base Attack gives 4 Perfection."
+    }
+  },
+  {
+    "Name": "Gaulteram",
+    "Element": "Earth",
+    "Power": 3261,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "When hit, lose 1 Perfection instead of 1 rank.",
+      "Lvl10": "Apply Rush on Rank S",
+      "Lvl20": "Gain 2 Perfection on turn start."
+    }
+  },
+  {
+    "Name": "Gesam",
+    "Element": "Physical",
+    "Power": 3228,
+    "Attributes": {"Attribute1": "A", "Attribute2": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Convert Light damage Skills to Physical damage.",
+      "Lvl10": "20% increased Physical damage with Skills.",
+      "Lvl20": "-1 AP cost for Physical Skills."
+    }
+  },
+  {
+    "Name": "Glaceso",
+    "Element": "Ice",
+    "Power": 2873,
+    "Attributes": {"Defense": "A", "Luck": "S"},
+    "PassiveEffects": {
+      "Lvl4": "+1 Perfection on Critical hit.",
+      "Lvl10": "Self-Heal by 2% Health on dealing a Critical hit.",
+      "Lvl20": "Counterattack is always a Critical hit."
+    }
+  },
+  {
+    "Name": "Lanceram",
+    "Element": "Physical",
+    "Power": 3713,
+    "Attributes": {"Vitality": "S", "Agility": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Rank can't be lower than C.",
+      "Lvl10": "Base Attack gives 4 Perfection.",
+      "Lvl20": "Parrying gives 2 Perfection instead of 1."
+    }
+  },
+  {
+    "Name": "Liteso",
+    "Element": "Physical",
+    "Power": 3551,
+    "Attributes": {"Defense": "S", "Agility": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Base Attack consumes all Shields to deal 100% increased damage per Shield.",
+      "Lvl10": "+1 Shield on Counterattack.",
+      "Lvl20": "Base Attack gives 4 Perfection."
+    }
+  },
+  {
+    "Name": "Noahram",
+    "Element": "Physical",
+    "Power": 2260,
+    "Attributes": {"Vitality": "S"},
+    "PassiveEffects": {
+      "Lvl4": "N/A",
+      "Lvl10": "N/A",
+      "Lvl20": "N/A"
+    }
+  },
+  {
+    "Name": "Nosaram",
+    "Element": "Physical",
+    "Power": 3551,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Double Perfection gained on Free Aim shots.",
+      "Lvl10": "Free Aim shots break 2 Shields.",
+      "Lvl20": "50% increased Free Aim damage."
+    }
+  },
+  {
+    "Name": "Sakaram",
+    "Element": "Physical",
+    "Power": 2938,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Can't lose Perfection. No damage increase from Rank.",
+      "Lvl10": "50% increased Base Attack damage.",
+      "Lvl20": "Base Attack gives 4 Perfection."
+    }
+  },
+  {
+    "Name": "Seeram",
+    "Element": "Light",
+    "Power": 3713,
+    "Attributes": {"Vitality": "C", "Agility": "B"},
+    "PassiveEffects": {
+      "Lvl4": "-1 to all Perfection gain but can't reach Rank S.",
+      "Lvl10": "Base Attack gives 4 Perfection.",
+      "Lvl20": "20% increased Light damage with Skills."
+    }
+  },
+  {
+    "Name": "Simoso",
+    "Element": "Light",
+    "Power": 3228,
+    "Attributes": {"Vitality": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "An ethereal Sword deals Light damage on any damage dealt with Skills.",
+      "Lvl10": "20% chance to apply Burn on dealing Light damage.",
+      "Lvl20": "Can't die if at least Rank A."
+    }
+  },
+  {
+    "Name": "Sireso",
+    "Element": "Physical",
+    "Power": 2583,
+    "Attributes": {"Vitality": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Bonus damage from Perfection applies to all allies at half value. Bonus damage no longer applies to Verso.",
+      "Lvl10": "Perfection gained is increased by 1 while Powerful",
+      "Lvl20": "Support Skills cost 1 less AP."
+    }
+  },
+  {
+    "Name": "Tireso",
+    "Element": "Earth",
+    "Power": 3713,
+    "Attributes": {"Vitality": "S", "Defense": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Gain 1 Rank on applying Mark.",
+      "Lvl10": "Mark an enemy on Base Attack.",
+      "Lvl20": "Apply Powerless on Marking an enemy."
+    }
+  },
+  {
+    "Name": "Verleso",
+    "Element": "Physical",
+    "Power": 3454,
+    "Attributes": {"Vitality": "S"},
+    "PassiveEffects": {
+      "Lvl4": "N/A",
+      "Lvl10": "N/A",
+      "Lvl20": "N/A"
+    }
+  }
+]
+  ]
+},
+{
+  "character": "Lune",
+  "skills": [
+  {
+    "Name": "Crippling Tsunami",
+    "Description": "Deals medium Ice damage to all enemies (1 hit). Applies Slow for 3 turns. Consumes Earth, Lightning, and Fire Stains for greatly increased damage.",
+    "APCost": 5
+  },
+  {
+    "Name": "Crustal Crush",
+    "Description": "Deals high single-target Earth and Break damage (5 hits). Consumes Lightning Stain for increased damage.",
+    "APCost": 7
+  },
+  {
+    "Name": "Earth Rising",
+    "Description": "Deals low Earth damage to all enemies (1 hit). Consumes Lightning Stain for increased damage.",
+    "APCost": 3
+  },
+  {
+    "Name": "Electrify",
+    "Description": "Deals low single-target Lightning damage (3 hits). Critical Hits trigger an additional hit. Consumes Fire Stain to generate one Light Stain.",
+    "APCost": 1
+  },
+  {
+    "Name": "Elemental Genesis",
+    "Description": "Deals extreme damage to all enemies (8 hits). Each hit deals damage in a random element. Can only be cast with Lightning, Earth, Fire, and Ice Stains.",
+    "APCost": 4
+  },
+  {
+    "Name": "Elemental Trick",
+    "Description": "Deals low single-target Ice, Fire, Lightning, and Earth damage (4 hits). Critical Hits generate the corresponding Stain.",
+    "APCost": 3
+  },
+  {
+    "Name": "Fire Rage",
+    "Description": "Deals increasingly high Fire damage to all enemies every turn until Lune receives damage. Stuns self if interrupted. Consumes Ice Stain for increased damage.",
+    "APCost": 5
+  },
+  {
+    "Name": "Healing Light",
+    "Description": "Heals the targeted ally and dispels Status Effects. Consumes Earth Stain: costs 0 AP.",
+    "APCost": 3
+  },
+  {
+    "Name": "Hell",
+    "Description": "Deals very high Fire damage that applies 5 Burn per hit to all enemies (2 hits). Deals self-damage if failed. Consumes Ice, Earth, and Lightning Stains for greatly increased damage.",
+    "APCost": 9
+  },
+  {
+    "Name": "Ice Lance",
+    "Description": "Deals medium single-target Ice damage that Slows the target (1 hit). Consumes Earth Stain for increased damage.",
+    "APCost": 4
+  },
+  {
+    "Name": "Immolation",
+    "Description": "Deals low single-target Fire damage and applies 3 Burn (1 hit). Applies 2 more Burns if the target is Marked. Consumes Ice Stain for increased damage.",
+    "APCost": 2
+  },
+  {
+    "Name": "Lightning Dance",
+    "Description": "Deals very high single-target Lightning damage (6 hits). Critical Hits trigger an additional hit. Consumes Earth, Ice, and Fire Stains for greatly increased damage.",
+    "APCost": 7
+  },
+  {
+    "Name": "Mayhem",
+    "Description": "Consumes all Stains to deal high elemental damage to the target. Can Break if 4 Stains are consumed.",
+    "APCost": 3
+  },
+  {
+    "Name": "Rebirth",
+    "Description": "Revives an ally with 30–70% Health and 2 additional AP. Consumes Lightning Stains: costs 0 AP.",
+    "APCost": 5
+  },
+  {
+    "Name": "Revitalization",
+    "Description": "Heals 1–3 allies by 40–60% Health. Consumes Fire Stains to also apply Regen that heals on turn start for 3 turns.",
+    "APCost": 5
+  },
+  {
+    "Name": "Rockslide",
+    "Description": "Deals medium single-target Earth damage (2 hits). Can Break. Consumes Lightning, Ice, and Fire Stains for greatly increased damage.",
+    "APCost": 5
+  },
+  {
+    "Name": "Sky Break",
+    "Description": "Deals extreme damage to all enemies (1 hit). Element depends on which Stains Lune has the most. Can Break.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Storm Caller",
+    "Description": "All enemies receive medium Lightning damage at the end of their turn and low Lightning damage when they receive damage. Duration: 3 turns. Consumes Fire Stains for double thunder strikes on turn end.",
+    "APCost": 6
+  },
+  {
+    "Name": "Terraquake",
+    "Description": "Deals low Earth and Break damage to all enemies every turn. Also increases Break damage received by 50%. Duration: 3 turns. Consumes Lightning Stains to increase duration to 5 turns.",
+    "APCost": 5
+  },
+  {
+    "Name": "Thermal Transfer",
+    "Description": "Deals low single-target Ice damage (2 hits). Gains 4 AP if the target is Burning. Consumes Earth Stains to play a second turn.",
+    "APCost": 2
+  },
+  {
+    "Name": "Thunderfall",
+    "Description": "Deals medium Lightning damage to random enemies (2–6 hits). Critical Hits trigger an additional hit. Consumes Fire Stain for increased damage.",
+    "APCost": 5
+  },
+  {
+    "Name": "Tree of Life",
+    "Description": "Cleanses all Status Effects and Heals all allies.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Tremor",
+    "Description": "Deals high Earth damage to all enemies (1 hit). Removes all enemies' Shields.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Typhoon",
+    "Description": "On turn start, deals high Ice damage to all enemies and Heals allies. Consumes Earth Stains to increase duration from 3 to 5 turns.",
+    "APCost": 8
+  }
+],
+  "weapons" : [
+      [
+  {
+    "Name": "Angerim",
+    "Element": "Fire",
+    "Power": 3293,
+    "Attributes": {
+      "Defense": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Base Attack applies 2 Burn per Fire Stain.",
+      "Lvl. 10: Generate one Fire Stain at the beginning of each turn.",
+      "Lvl. 20: 30% increased Burn damage per Fire Stain."
+    ]
+  },
+  {
+    "Name": "Benisim",
+    "Element": "Earth",
+    "Power": 2744,
+    "Attributes": {
+      "Vitality": "S",
+      "Defense": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Healing Skills cost 1 less AP.",
+      "Lvl. 10: Generate one Earth Stain at the beginning of each turn.",
+      "Lvl. 20: Replay instantly on consuming Stains with a Healing Skill."
+    ]
+  },
+  {
+    "Name": "Betelim",
+    "Element": "Earth",
+    "Power": 3228,
+    "Attributes": {
+      "Vitality": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Using a Skill that consumes Stains increases damage by 20%. Can stack up to 5 times. Resets on using a Skill without consuming Stains.",
+      "Lvl. 10: On turn start, if no Stains, 2 random Stains are generated.",
+      "Lvl. 20: +1 AP when Stains are consumed."
+    ]
+  },
+  {
+    "Name": "Braselim",
+    "Element": "Fire",
+    "Power": 3390,
+    "Attributes": {
+      "Vitality": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: 30% increased Critical Chance per Ice Stain.",
+      "Lvl. 10: +5% of a Gradient Charge on Critical hit.",
+      "Lvl. 20: 20% increased Fire damage with Skills."
+    ]
+  },
+  {
+    "Name": "Chapelim",
+    "Element": "Earth",
+    "Power": 3164,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: 30% increased Break damage per Earth Stain.",
+      "Lvl. 10: Gain 9 AP on Breaking an enemy.",
+      "Lvl. 20: Generate one Earth Stain at the beginning of each turn."
+    ]
+  },
+  {
+    "Name": "Choralim",
+    "Element": "Fire",
+    "Power": 3551,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: 100% Critical Chance when 4 Stains are simultaneously active.",
+      "Lvl. 10: 20% increased damage for each consecutive turn without taking damage. Can stack up to 5 times.",
+      "Lvl. 20: Critical hits apply Burn."
+    ]
+  },
+  {
+    "Name": "Colim",
+    "Element": "Light",
+    "Power": 2583,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: 50% chance to generate a Light Stain when consuming Stains.",
+      "Lvl. 10: +1 AP on consuming a Light Stain.",
+      "Lvl. 20: 20% increased damage with Skills per active Light Stain."
+    ]
+  },
+  {
+    "Name": "Coralim",
+    "Element": "Ice",
+    "Power": 2744,
+    "Attributes": {
+      "Vitality": "A",
+      "Defense": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Ice Skills cost 1 less AP.",
+      "Lvl. 10: 20% increased Ice damage with Skills.",
+      "Lvl. 20: Start battle with 1 Earth Stain."
+    ]
+  },
+  {
+    "Name": "Deminerim",
+    "Element": "Lightning",
+    "Power": 2744,
+    "Attributes": {
+      "Agility": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Lightning Skills cost 1 less AP.",
+      "Lvl. 10: 20% increased Lightning damage with Skills.",
+      "Lvl. 20: Start battle with 1 Fire Stain."
+    ]
+  },
+  {
+    "Name": "Elerim",
+    "Element": "Earth",
+    "Power": 3551,
+    "Attributes": {
+      "Vitality": "S",
+      "Defense": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Consuming an Earth Stain applies 1 Shield to self.",
+      "Lvl. 10: 20% increased Earth damage with Skills.",
+      "Lvl. 20: Base Attack generates an Earth Stain."
+    ]
+  },
+  {
+    "Name": "Kralim",
+    "Element": "Lightning",
+    "Power": 3390,
+    "Attributes": {
+      "Vitality": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Casting a Skill increases the Skill damage of all other elements by 20%. Resets when casting a Skill of a previous element.",
+      "Lvl. 10: On turn start, if no Stains, 2 random Stains are generated.",
+      "Lvl. 20: +1 AP when Stains are consumed."
+    ]
+  },
+  {
+    "Name": "Lighterim",
+    "Element": "Fire",
+    "Power": 2744,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Fire Skills cost 1 less AP.",
+      "Lvl. 10: 20% increased Fire damage with Skills.",
+      "Lvl. 20: Start battle with 1 Ice Stain."
+    ]
+  },
+  {
+    "Name": "Lithelim",
+    "Element": "Void",
+    "Power": 3099,
+    "Attributes": {
+      "Vitality": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: 5% chance to generate a Dark Stain when consuming Stains. Deal 50% more damage with Skills per active Dark Stain.",
+      "Lvl. 10: +1 AP on consuming a Light Stain.",
+      "Lvl. 20: Base Attacks can consume one Dark Stain to deal 200% more damage."
+    ]
+  },
+  {
+    "Name": "Lunerim",
+    "Element": "Fire",
+    "Power": 2421,
+    "Attributes": {
+      "Vitality": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: N/A",
+      "Lvl. 10: N/A",
+      "Lvl. 20: N/A"
+    ]
+  },
+  {
+    "Name": "Painerim",
+    "Element": "Earth",
+    "Power": 2744,
+    "Attributes": {
+      "Vitality": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Earth Skills cost 1 less AP.",
+      "Lvl. 10: 20% increased Earth damage with Skills.",
+      "Lvl. 20: Start battle with 1 Lightning Stain."
+    ]
+  },
+  {
+    "Name": "Potierim",
+    "Element": "Ice",
+    "Power": 2906,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Healing Skills generate one additional 1 Light stain.",
+      "Lvl. 10: Consuming a Light Stain applies Slow to a random enemy.",
+      "Lvl. 20: Base Attack generates a Light Stain."
+    ]
+  },
+  {
+    "Name": "Redalim",
+    "Element": "Ice",
+    "Power": 2583,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Healing Skills generate one additional Light stain.",
+      "Lvl. 10: Generate one Ice Stain at the beginning of each turn.",
+      "Lvl. 20: Replay instantly on consuming Stains with a Healing Skill."
+    ]
+  },
+  {
+    "Name": "Saperim",
+    "Element": "Lightning",
+    "Power": 3067,
+    "Attributes": {
+      "Defense": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Using a Gradient Attack generates 1 additional Light Stain.",
+      "Lvl. 10: When a Fire Stain is generated, a Lightning Stain is also generated. Once per turn.",
+      "Lvl. 20: Gradient Attacks and Gradient Counters deal 50% more damage."
+    ]
+  },
+  {
+    "Name": "Scaverim",
+    "Element": "Dark",
+    "Power": 4197,
+    "Attributes": {
+      "Vitality": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: 50% chance to generate a Dark Stain when consuming Stains. Deal 50% more damage with Skills per active Dark Stain.",
+      "Lvl. 10: Base Attacks can consume one Dark Stain to deal 200% more damage.",
+      "Lvl. 20: With 4 active Dark Stains, any Skill can consume them to deal 300% more damage."
+    ]
+  },
+  {
+    "Name": "Snowim",
+    "Element": "Ice",
+    "Power": 3874,
+    "Attributes": {
+      "Vitality": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Freeze self when falling below 30% health. Prevent the next instance of damage while Frozen.",
+      "Lvl. 10: On turn start, if Frozen, remove Freeze and recover 60% Health.",
+      "Lvl. 20: Gain 2 Ice Stains and 3 AP when Frozen."
+    ]
+  },
+  {
+    "Name": "Trebuchim",
+    "Element": "Lightning",
+    "Power": 3067,
+    "Attributes": {
+      "Vitality": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Generate a random Stain on Free Aim shot.",
+      "Lvl. 10: +1 AP when Stains are consumed.",
+      "Lvl. 20: Base Attack generates 2 random Stains."
+    ]
+  },
+  {
+    "Name": "Troubadim",
+    "Element": "Physical",
+    "Power": 3067,
+    "Attributes": {
+      "Vitality": "A",
+      "Defense": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Free Aim Shots deal damage to an additional random target.",
+      "Lvl. 10: 50% increased Free Aim damage.",
+      "Lvl. 20: Generate a random Stain on Free Aim shot."
+    ]
+  }
+]
+    
+  ]
+},
+{
+  "character": "Maelle",
+  "skills": [
+  {
+    "Name": "Breaking Rules",
+    "Description": "Deals low single-target Physical damage (2 hits). Destroys all target's Shields and gains 1 AP per Shield destroyed. If the target is Defenseless, play a second turn.",
+    "APCost": 3
+  },
+  {
+    "Name": "Burning Canvas",
+    "Description": "Changes stance to Offensive. Deals high single-target Void damage (5 hits). Applies 1 Burn per hit. Damage increases for each Burn on the target.",
+    "APCost": 5
+  },
+  {
+    "Name": "Combustion",
+    "Description": "Deals medium single-target Physical damage (2 hits). Consumes up to 10 Burn stacks for increased damage.",
+    "APCost": 4
+  },
+  {
+    "Name": "Degagement",
+    "Description": "Deals low single-target Fire damage (1 hit). Target becomes weak to Fire damage for 2 turns.",
+    "APCost": 2
+  },
+  {
+    "Name": "Egide",
+    "Description": "Protects allies by taking damage in their place for 2 turns. Duration is extended by 1 when gaining Shell.",
+    "APCost": 3
+  },
+  {
+    "Name": "Fencer's Flurry",
+    "Description": "Deals medium damage to all enemies (1 hit). Uses weapon's element. Applies Defenseless for 1 turn.",
+    "APCost": 4
+  },
+  {
+    "Name": "Fleuret Fury",
+    "Description": "Deals high single-target Physical damage (3 hits). If in Virtuose Stance, remain in that stance. Can Break.",
+    "APCost": 6
+  },
+  {
+    "Name": "Gommage",
+    "Description": "Kills weak targets. Otherwise, deals extreme Void damage (1 hit).",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Guard Down",
+    "Description": "Changes stance to Offensive. Applies Defenseless to all enemies for 3 turns.",
+    "APCost": 3
+  },
+  {
+    "Name": "Guard Up",
+    "Description": "Applies Shell, reducing damage taken, to up to 3 allies for 3 turns.",
+    "APCost": 3
+  },
+  {
+    "Name": "Gustave's Homage",
+    "Description": "Deals high single-target Lightning damage (8 hits). Increased damage to Marked targets. Doesn't remove Mark.",
+    "APCost": 8
+  },
+  {
+    "Name": "Last Chance",
+    "Description": "Reduces self-Health to 1 but refills all AP. Switches to Virtuose Stance.",
+    "APCost": 1
+  },
+  {
+    "Name": "Mezzo Forte",
+    "Description": "Reapplies current stance and gives 2–4 AP.",
+    "APCost": 1
+  },
+  {
+    "Name": "Momentum Strike",
+    "Description": "Deals high single-target damage (1 hit). Uses weapon's element. Increased damage to Marked targets. In Virtuose Stance, costs 4 AP.",
+    "APCost": 7
+  },
+  {
+    "Name": "Offensive Switch",
+    "Description": "Deals low single-target damage (1 hit) and applies Defenseless for 3 turns. Uses weapon's element.",
+    "APCost": 1
+  },
+  {
+    "Name": "Payback",
+    "Description": "Deals very high single-target Physical damage (1 hit). Reduced AP cost for each attack parried since last turn. Can Break.",
+    "APCost": 9
+  },
+  {
+    "Name": "Percee",
+    "Description": "Deals medium single-target Physical damage (1 hit). Increased damage to Marked targets. In Virtuose Stance, costs 2 AP.",
+    "APCost": 5
+  },
+  {
+    "Name": "Phantom Strike",
+    "Description": "Changes stance to Defensive. Deals very high Void damage to all enemies (4 hits). Also grants +35% of a Gradient Charge.",
+    "APCost": 7
+  },
+  {
+    "Name": "Phoenix Flame",
+    "Description": "Applies 10 Burn to all enemies and revives all allies with 50–70% Health.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Pyrolyse",
+    "Description": "Deals extreme single-target Fire damage (3 hits). Applies 5 Burn per hit. In Offensive Stance, applies 2 more Burn per hit.",
+    "APCost": 9
+  },
+  {
+    "Name": "Rain of Fire",
+    "Description": "Deals medium single-target Fire damage (2 hits). Applies 3 Burn per hit. In Defensive Stance, applies 2 more Burn per hit.",
+    "APCost": 5
+  },
+  {
+    "Name": "Revenge",
+    "Description": "Deals high single-target Fire damage (1 hit). Damage increases for each hit received since the previous turn. Can Break.",
+    "APCost": 5
+  },
+  {
+    "Name": "Spark",
+    "Description": "Deals low single-target Fire damage (1 hit). Applies 3 Burn. In Offensive Stance, applies 2 more Burn per hit.",
+    "APCost": 3
+  },
+  {
+    "Name": "Stendhal",
+    "Description": "Changes stance to Stanceless. Deals extreme single-target Void damage (1 hit). Removes self-Shields and applies Defenseless to self.",
+    "APCost": 8
+  },
+  {
+    "Name": "Swift Stride",
+    "Description": "Deals low single-target Physical damage (1 hit). Switches to Virtuose Stance if target is Burning. Regains 0–2 AP.",
+    "APCost": 3
+  },
+  {
+    "Name": "Sword Ballet",
+    "Description": "Deals extreme single-target damage (5 hits). Uses weapon's element. Critical Hits deal double damage.",
+    "APCost": 9
+  },
+  {
+    "Name": "Virtuose Strike",
+    "Description": "Deals high single-target Physical damage (5 hits).",
+    "APCost": "Gradient Charge"
+  }
+],
+  "weapons" : [
+    [
+  {
+    "Name": "Barrier Breaker",
+    "Element": "Void",
+    "Power": 3616,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Steal Shields removed by hitting enemies.",
+      "Level10": "Switch to Virtuose Stance on breaking any Shield.",
+      "Level20": "Hitting a Marked enemy breaks all its Shields."
+    }
+  },
+  {
+    "Name": "Battlum",
+    "Element": "Physical",
+    "Power": 3067,
+    "Attributes": {
+      "Defense": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Double Gradient generation while in Defensive Stance.",
+      "Level10": "If Stanceless, Base Attack switches to Defensive Stance.",
+      "Level20": "+5% of a Gradient Charge on Parry."
+    }
+  },
+  {
+    "Name": "Brulerum",
+    "Element": "Fire",
+    "Power": 2744,
+    "Attributes": {
+      "Agility": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "Critical hits apply Burn.",
+      "Level10": "Base Attack applies 2 Burn.",
+      "Level20": "100% Critical Chance while Stanceless."
+    }
+  },
+  {
+    "Name": "Chalium",
+    "Element": "Light",
+    "Power": 3422,
+    "Attributes": {
+      "Vitality": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "On Defensive Stance, gain 1 Shield per Parry. Lose all Shields on turn start.",
+      "Level10": "20% increased Light damage with Skills.",
+      "Level20": "50% increased Counter damage per Shield."
+    }
+  },
+  {
+    "Name": "Chantenum",
+    "Element": "Fire",
+    "Power": 2841,
+    "Attributes": {
+      "Agility": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "On turn start, if Stanceless, switch to Offensive Stance.",
+      "Level10": "Fire Skills cost 1 less AP.",
+      "Level20": "+1 Shield on switching to Offensive Stance."
+    }
+  },
+  {
+    "Name": "Clierum",
+    "Element": "Lightning",
+    "Power": 3196,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "Critical hits with Skills give 2 AP. Once per turn.",
+      "Level10": "20% increased Lightning damage with Skills.",
+      "Level20": "+50% Critical Chance while in Offensive Stance."
+    }
+  },
+  {
+    "Name": "Coldum",
+    "Element": "Ice",
+    "Power": 2583,
+    "Attributes": {
+      "Vitality": "S",
+      "Defense": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Self-Heal by 2% Health on dealing a Critical hit.",
+      "Level10": "+50% Critical Chance while in Defensive Stance.",
+      "Level20": "If Stanceless, Base Attack switches to Defensive Stance."
+    }
+  },
+  {
+    "Name": "Duenum",
+    "Element": "Physical",
+    "Power": 2421,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "In Defensive Stance, gaining AP also gives 1 AP to allies.",
+      "Level10": "If Stanceless, Base Attack switches to Defensive Stance.",
+      "Level20": "+1 AP on Stance switch."
+    }
+  },
+  {
+    "Name": "Facesum",
+    "Element": "Physical",
+    "Power": 3519,
+    "Attributes": {
+      "Vitality": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "In Offensive Stance, double the amount of Burn applied.",
+      "Level10": "50% increased Burn damage.",
+      "Level20": "Base Attack propagates Burn."
+    }
+  },
+  {
+    "Name": "Glaisum",
+    "Element": "Physical",
+    "Power": 3713,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Allies recover 20% Health on switching to Virtuose Stance.",
+      "Level10": "Gain Shell when switching out of Virtuose Stance.",
+      "Level20": "Cleanse self Status Effects when switching to Virtuose Stance."
+    }
+  },
+  {
+    "Name": "Jarum",
+    "Element": "Physical",
+    "Power": 2583,
+    "Attributes": {
+      "Defense": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Switch to Virtuose Stance on Counterattack.",
+      "Level10": "Apply 5 Burn on Counterattack.",
+      "Level20": "50% increased Counter damage per Shield."
+    }
+  },
+  {
+    "Name": "Lithum",
+    "Element": "Void",
+    "Power": 3228,
+    "Attributes": {
+      "Agility": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "In Virtuose Stance, hitting a Marked enemy doesn't remove Mark.",
+      "Level10": "Switch to Virtuose Stance on Counterattack.",
+      "Level20": "Gain Shell when switching out of Virtuose Stance."
+    }
+  },
+  {
+    "Name": "Maellum",
+    "Element": "Physical",
+    "Power": 3228,
+    "Attributes": {
+      "Vitality": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "N/A",
+      "Level10": "N/A",
+      "Level20": "N/A"
+    }
+  },
+  {
+    "Name": "Medalum",
+    "Element": "Physical",
+    "Power": 2906,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Start in Virtuose Stance.",
+      "Level10": "In Virtuose Stance, every Burn applied is doubled.",
+      "Level20": "In Virtuose Stance, Burn deals double damage."
+    }
+  },
+  {
+    "Name": "Melarum",
+    "Element": "Physical",
+    "Power": 3584,
+    "Attributes": {
+      "Vitality": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Allies recover 20% Health on switching to Virtuose Stance.",
+      "Level10": "Applies Shell when Health is above 80%.",
+      "Level20": "Switch to Virtuose Stance when Health falls below 50%."
+    }
+  },
+  {
+    "Name": "Plenum",
+    "Element": "Ice",
+    "Power": 3035,
+    "Attributes": {
+      "Defense": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "On turn start, if Stanceless, switch to Defensive Stance.",
+      "Level10": "In Defensive Stance, double Break damage.",
+      "Level20": "Support Skills cost 1 less AP."
+    }
+  },
+  {
+    "Name": "Seashelum",
+    "Element": "Fire",
+    "Power": 3003,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "+1 Shield on switching to Offensive Stance.",
+      "Level10": "If Stanceless, Base Attack switches to Offensive Stance.",
+      "Level20": "+50% Critical Chance while in Offensive Stance."
+    }
+  },
+  {
+    "Name": "Sekarum",
+    "Element": "Physical",
+    "Power": 3390,
+    "Attributes": {
+      "Vitality": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Switch to Virtuose Stance on breaking any Shield.",
+      "Level10": "Free Aim shots break 2 shields.",
+      "Level20": "In Virtuose Stance, all damage pierce Shields."
+    }
+  },
+  {
+    "Name": "Stalum",
+    "Element": "Fire",
+    "Power": 3228,
+    "Attributes": {
+      "Defense": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Apply Burn on self on turn start. 10% increased damage for each self Burn stack.",
+      "Level10": "Base Attack applies 2 Burn.",
+      "Level20": "While in Defensive Stance, receive Heal instead of Burn damage."
+    }
+  },
+  {
+    "Name": "Tissenum",
+    "Element": "Earth",
+    "Power": 3874,
+    "Attributes": {
+      "Vitality": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "In Defensive Stance, double Break damage.",
+      "Level10": "Gain 9 AP on Breaking an enemy.",
+      "Level20": "Breaking an enemy deals 3 high amount of Earth damage."
+    }
+  },
+  {
+    "Name": "Veremum",
+    "Element": "Physical",
+    "Power": 3293,
+    "Attributes": {
+      "Vitality": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "If Stanceless, Base Attack switches to Offensive Stance.",
+      "Level10": "Counterattacks apply Defenceless.",
+      "Level20": "+50% Critical Chance while in Offensive Stance."
+    }
+  },
+  {
+    "Name": "Volesterum",
+    "Element": "Physical",
+    "Power": 3293,
+    "Attributes": {
+      "Vitality": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "+1 AP on Stance switch.",
+      "Level10": "If Stanceless, Base Attack switches to Defensive Stance.",
+      "Level20": "Recover 5% Health on Stance switch."
+    }
+  },
+  {
+    "Name": "Yeverum",
+    "Element": "Physical",
+    "Power": 3358,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Applying Shell also applies 1 Shield.",
+      "Level10": "On applying Shields, also give 1 AP.",
+      "Level20": "On switching to Virtuose Stance, double all Shields on allies."
+    }
+  }
+]
+  ]
+},
+{
+  "character": "Sciel",
+  "skills": [
+  {
+    "Name": "All Set",
+    "Description": "Applies Shell, Powerful, and Rush to all allies.",
+    "APCost": 3
+  },
+  {
+    "Name": "Bad Omen",
+    "Description": "Deals low Dark damage to all enemies (2 hits). Applies 2 Foretell per hit.",
+    "APCost": 3
+  },
+  {
+    "Name": "Card Weaver",
+    "Description": "Deals low single-target Physical damage (1 hit). Propagates target's Foretell to all enemies and plays a second turn.",
+    "APCost": 3
+  },
+  {
+    "Name": "Dark Cleansing",
+    "Description": "Cleanses an ally of their Status Effects and propagates the target's buff to all allies.",
+    "APCost": 0
+  },
+  {
+    "Name": "Dark Wave",
+    "Description": "Deals high Dark damage to all enemies (3 hits). Consumes all Foretell to deal additional damage.",
+    "APCost": 6
+  },
+  {
+    "Name": "Delaying Slash",
+    "Description": "Deals medium single-target damage (2 hits). Uses weapon's element. Consumes Foretell to increase damage and delay the target's turn.",
+    "APCost": 5
+  },
+  {
+    "Name": "Doom",
+    "Description": "Deals very high single-target Dark damage (3 hits). Applies Powerless, Defenseless, and Slow for 3 turns. Can Break.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "End Slice",
+    "Description": "Deals extreme single-target Physical damage (1 hit). Damage increases for each Foretell consumed since the start of battle.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Final Path",
+    "Description": "Deals extreme single-target Dark damage (1 hit) and applies 10 Foretell. Can Break.",
+    "APCost": 9
+  },
+  {
+    "Name": "Firing Shadow",
+    "Description": "Deals low Dark damage to all enemies (3 hits). Consumes 1 Foretell per hit for increased damage.",
+    "APCost": 3
+  },
+  {
+    "Name": "Focused Foretell",
+    "Description": "Deals medium single-target Physical damage (1 hit). Applies 2 Foretell, or 5 if the target has none.",
+    "APCost": 2
+  },
+  {
+    "Name": "Fortune's Fury",
+    "Description": "Targeted ally deals double damage for 1 turn.",
+    "APCost": 5
+  },
+  {
+    "Name": "Grim Harvest",
+    "Description": "Deals medium single-target Dark damage (1 hit) and heals all allies by 30% Health. Consumes Foretell to increase healing by 5% per Foretell.",
+    "APCost": 5
+  },
+  {
+    "Name": "Harvest",
+    "Description": "Deals medium single-target damage (1 hit). Uses weapon's element. Heals self by 40% Health. Consumes all Foretell to increase healing by 5% per Foretell.",
+    "APCost": 3
+  },
+  {
+    "Name": "Intervention",
+    "Description": "Targeted ally acts immediately and gains 4 AP.",
+    "APCost": 5
+  },
+  {
+    "Name": "Marking Card",
+    "Description": "Deals medium single-target Dark damage (2 hits). Applies Mark and 3 Foretell to the target.",
+    "APCost": 3
+  },
+  {
+    "Name": "Our Sacrifice",
+    "Description": "Deals extreme Dark damage to all enemies (1 hit). Absorbs allies' Health and enemies' Foretell to increase damage.",
+    "APCost": 4
+  },
+  {
+    "Name": "Phantom Blade",
+    "Description": "Deals high single-target Dark damage (1 hit). Consumes all Foretell for additional damage. Can Break.",
+    "APCost": 5
+  },
+  {
+    "Name": "Plentiful Harvest",
+    "Description": "Deals medium single-target Physical damage (2 hits). Consumes all Foretell on the target and gives 1 AP to a party member per Foretell consumed.",
+    "APCost": 4
+  },
+  {
+    "Name": "Rush",
+    "Description": "Applies Rush to 1–3 allies, increasing their speed for 3 turns.",
+    "APCost": 3
+  },
+  {
+    "Name": "Sealed Fate",
+    "Description": "Deals high single-target damage (5–7 hits). Uses weapon's element. Each hit can consume 1 Foretell to deal 200% more damage. Critical Hits don't consume Foretell but still gain the bonus.",
+    "APCost": 4
+  },
+  {
+    "Name": "Searing Bond",
+    "Description": "Deals medium single-target Dark damage (1 hit). Applies 5 Foretell. Also damages and applies Foretell to every Burning enemy.",
+    "APCost": 4
+  },
+  {
+    "Name": "Shadow Bringer",
+    "Description": "Deals high single-target Dark damage to random enemies (10 hits). Applies 1 Foretell per hit.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Spectral Sweep",
+    "Description": "Deals medium single-target damage (2–6 hits). Uses weapon's element. Applies 1 Foretell per hit. Critical Hits apply an additional Foretell.",
+    "APCost": 7
+  },
+  {
+    "Name": "Twilight Dance",
+    "Description": "Deals extreme single-target Dark damage (4 hits). During Twilight, extends its duration by 1 turn. Consumes all Foretell to deal additional damage.",
+    "APCost": 9
+  },
+  {
+    "Name": "Twilight Slash",
+    "Description": "Deals low single-target Dark damage (1 hit). Consumes all Foretell to deal additional damage.",
+    "APCost": 2
+  }
+],
+  "weapons" : [
+  {
+    "Name": "Algueron",
+    "Element": "Ice",
+    "Power": 3228,
+    "Attributes": {
+      "Vitality": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Free Aim shots can consume 1 Foretell to deal 100% more damage.",
+      "Level10": "Base Attack applies 3 Foretell.",
+      "Level20": "During Twilight, Free Aim shots deal double damage."
+    }
+  },
+  {
+    "Name": "Blizzon",
+    "Element": "Ice",
+    "Power": 4197,
+    "Attributes": {
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "While having at least 1 active Moon charge, Moon Skills are always Critical but damage taken is doubled.",
+      "Level10": "25% increased damage per Moon charge.",
+      "Level20": "Base Attack gives 1 Moon charge."
+    }
+  },
+  {
+    "Name": "Bourgelon",
+    "Element": "Light",
+    "Power": 3099,
+    "Attributes": {
+      "Vitality": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "Consuming Foretell applies 2 Burn on target per Sun Charge.",
+      "Level10": "100% increased Burn damage in Twilight state.",
+      "Level20": "Sun Skills give one more charge."
+    }
+  },
+  {
+    "Name": "Charnon",
+    "Element": "Void",
+    "Power": 2970,
+    "Attributes": {
+      "Defense": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "100% Critical Chance during Twilight.",
+      "Level10": "Apply 1 Foretell on Critical hit.",
+      "Level20": "20% increased damage for each consecutive turn without taking damage. Can stack up to 5 times."
+    }
+  },
+  {
+    "Name": "Chation",
+    "Element": "Dark",
+    "Power": 3551,
+    "Attributes": {
+      "Vitality": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "Sun Skills always apply 10 Foretell, but all damage taken is doubled.",
+      "Level10": "Base Attack gives 1 Moon charge and consumes all Foretell to apply Burn.",
+      "Level20": "100% increased Burn damage in Twilight state."
+    }
+  },
+  {
+    "Name": "Corderon",
+    "Element": "Dark",
+    "Power": 2744,
+    "Attributes": {
+      "Defense": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Curse self on battle start. Deal 50% more damage while Cursed.",
+      "Level10": "Reset Curse duration when entering Twilight state.",
+      "Level20": "Play again when entering Twilight state."
+    }
+  },
+  {
+    "Name": "Direton",
+    "Element": "Earth",
+    "Power": 4035,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "+1 AP per Moon charge on turn start.",
+      "Level10": "Base Attack gives 1 Moon charge.",
+      "Level20": "During Twilight, Base Attack consumes all AP. Base Attack applies 1 Foretell and deals 50% increased damage per AP consumed."
+    }
+  },
+  {
+    "Name": "Garganon",
+    "Element": "Fire",
+    "Power": 3132,
+    "Attributes": {
+      "Vitality": "S",
+      "Defense": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "While having at least 1 active Sun charge, apply one Burn stack per hit taken.",
+      "Level10": "Counterattacks apply 1 Burn per active Sun charge.",
+      "Level20": "Base attack can consume 1 Sun charge to apply 5 Foretell."
+    }
+  },
+  {
+    "Name": "Gobluson",
+    "Element": "Fire",
+    "Power": 3358,
+    "Attributes": {
+      "Defense": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "During Twilight, every time Foretell is applied, it also affects another random enemy.",
+      "Level10": "Apply 1 Burn every 3 Foretell applied with Skills.",
+      "Level20": "20% increased Fire damage with Skills."
+    }
+  },
+  {
+    "Name": "Guleson",
+    "Element": "Lightning",
+    "Power": 3132,
+    "Attributes": {
+      "Agility": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "On Twilight Start, apply Mark to all enemies.",
+      "Level10": "Hitting a Marked enemy during Twilight doesn't remove Mark.",
+      "Level20": "Apply 3 Foretell on applying Mark."
+    }
+  },
+  {
+    "Name": "Hevasson",
+    "Element": "Physical",
+    "Power": 3454,
+    "Attributes": {
+      "Vitality": "S",
+      "Defense": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Free Aim shots can consume a Sun charge to apply 5 Foretell and consume a Moon charge to deal 400% more damage.",
+      "Level10": "Consuming a Sun or Moon charge gives 1 AP.",
+      "Level20": "Base Attack gives 1 Moon charge."
+    }
+  },
+  {
+    "Name": "Litheson",
+    "Element": "Physical",
+    "Power": 2809,
+    "Attributes": {
+      "Agility": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "During Moon, all allies have Greater Rush. During Sun, all enemies have Greater Slow.",
+      "Level10": "During Twilight, all allies have Greater Rush and all enemies have Greater Slow.",
+      "Level20": "+3 AP on applying a Buff or Debuff. Once per turn."
+    }
+  },
+  {
+    "Name": "Lusteson",
+    "Element": "Dark",
+    "Power": 3422,
+    "Attributes": {
+      "Vitality": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "Killing an enemy with Foretell applies its Foretell to another random enemy.",
+      "Level10": "Apply Mark on consuming Foretell.",
+      "Level20": "20% increased Dark damage with Skills."
+    }
+  },
+  {
+    "Name": "Martenon",
+    "Element": "Earth",
+    "Power": 3874,
+    "Attributes": {
+      "Vitality": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "On Twilight Start, deal damage to all enemies based on the amount of charges.",
+      "Level10": "On Twilight Start, apply 2 Foretell per charge to all enemies.",
+      "Level20": "Double Sun and Moon charge generation."
+    }
+  },
+  {
+    "Name": "Minason",
+    "Element": "Physical",
+    "Power": 2809,
+    "Attributes": {
+      "Vitality": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "Sun skills have increased damage for each Foretell on the target. Moon Skills don't generate Moon charges anymore.",
+      "Level10": "With at least 1 active Sun charge, gain one additional AP per Foretell consumed.",
+      "Level20": "Base attack can consume 1 Sun charge to apply 5 Foretell."
+    }
+  },
+  {
+    "Name": "Moisson",
+    "Element": "Physical",
+    "Power": 3325,
+    "Attributes": {
+      "Agility": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "During Twilight, all damage dealt is converted to Dark damage.",
+      "Level10": "20% increased Dark damage with Skills.",
+      "Level20": "Apply Shell during Moon, Powerful during Sun, and Rush during Twilight."
+    }
+  },
+  {
+    "Name": "Ramasson",
+    "Element": "Physical",
+    "Power": 3519,
+    "Attributes": {
+      "Vitality": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "Can consume 1 Moon charge on turn start to recover 20% of each ally's Health.",
+      "Level10": "Base Attack gives 1 Moon charge.",
+      "Level20": "Moon Skills give one more charge."
+    }
+  },
+  {
+    "Name": "Rangeson",
+    "Element": "Dark",
+    "Power": 3132,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "Recover 5% Health per Foretell applied.",
+      "Level10": "Healing Skills cost 1 less AP.",
+      "Level20": "30% increased Heal efficiency per Moon charge. Base Attack gives 1 Moon charge."
+    }
+  },
+  {
+    "Name": "Sadon",
+    "Element": "Light",
+    "Power": 2583,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "On turn start, gain 1 Shield if at least 1 Sun charge is active.",
+      "Level10": "Apply 5 Foretell on enemies that break Shields.",
+      "Level20": "+2 Sun charges on Counterattack."
+    }
+  },
+  {
+    "Name": "Scieleson",
+    "Element": "Physical",
+    "Power": 3454,
+    "Attributes": {
+      "Agility": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": {
+      "Level4": "N/A",
+      "Level10": "N/A",
+      "Level20": "N/A"
+    }
+  },
+  {
+    "Name": "Tisseron",
+    "Element": "Lightning",
+    "Power": 3067,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": {
+      "Level4": "Extend Twilight by one turn on using a Moon Skill. +50% Twilight damage increase on using a Sun Skill.",
+      "Level10": "Twilight duration is increased by 1.",
+      "Level20": "Play again when entering Twilight state."
+    }
+  }
+]
+},
+{
+  "character": "Verso",
+  "skills":[
+  {
+    "Name": "Crippling Tsunami",
+    "Description": "Deals medium Ice damage to all enemies (1 hit). Applies Slow for 3 turns. Consumes Earth, Lightning, and Fire Stains for greatly increased damage.",
+    "APCost": 5
+  },
+  {
+    "Name": "Crustal Crush",
+    "Description": "Deals high single-target Earth and Break damage (5 hits). Consumes Lightning Stain for increased damage.",
+    "APCost": 7
+  },
+  {
+    "Name": "Earth Rising",
+    "Description": "Deals low Earth damage to all enemies (1 hit). Consumes Lightning Stain for increased damage.",
+    "APCost": 3
+  },
+  {
+    "Name": "Electrify",
+    "Description": "Deals low single-target Lightning damage (3 hits). Critical Hits trigger an additional hit. Consumes Fire Stain to generate one Light Stain.",
+    "APCost": 1
+  },
+  {
+    "Name": "Elemental Genesis",
+    "Description": "Deals extreme damage to all enemies (8 hits). Each hit deals damage in a random element. Can only be cast with Lightning, Earth, Fire, and Ice Stains.",
+    "APCost": 4
+  },
+  {
+    "Name": "Elemental Trick",
+    "Description": "Deals low single-target Ice, Fire, Lightning, and Earth damage (4 hits). Critical Hits generate the corresponding Stain.",
+    "APCost": 3
+  },
+  {
+    "Name": "Fire Rage",
+    "Description": "Deals increasingly high Fire damage to all enemies every turn until Lune receives damage. Stuns self if interrupted. Consumes Ice Stain for increased damage.",
+    "APCost": 5
+  },
+  {
+    "Name": "Healing Light",
+    "Description": "Heals the targeted ally and dispels Status Effects. Consumes Earth Stain: costs 0 AP.",
+    "APCost": 3
+  },
+  {
+    "Name": "Hell",
+    "Description": "Deals very high Fire damage that applies 5 Burn per hit to all enemies (2 hits). Deals self-damage if failed. Consumes Ice, Earth, and Lightning Stains for greatly increased damage.",
+    "APCost": 9
+  },
+  {
+    "Name": "Ice Lance",
+    "Description": "Deals medium single-target Ice damage that Slows the target (1 hit). Consumes Earth Stain for increased damage.",
+    "APCost": 4
+  },
+  {
+    "Name": "Immolation",
+    "Description": "Deals low single-target Fire damage and applies 3 Burn (1 hit). Applies 2 more Burns if the target is Marked. Consumes Ice Stain for increased damage.",
+    "APCost": 2
+  },
+  {
+    "Name": "Lightning Dance",
+    "Description": "Deals very high single-target Lightning damage (6 hits). Critical Hits trigger an additional hit. Consumes Earth, Ice, and Fire Stains for greatly increased damage.",
+    "APCost": 7
+  },
+  {
+    "Name": "Mayhem",
+    "Description": "Consumes all Stains to deal high elemental damage to the target. Can Break if 4 Stains are consumed.",
+    "APCost": 3
+  },
+  {
+    "Name": "Rebirth",
+    "Description": "Revives an ally with 30–70% Health and 2 additional AP. Consumes Lightning Stains: costs 0 AP.",
+    "APCost": 5
+  },
+  {
+    "Name": "Revitalization",
+    "Description": "Heals 1–3 allies by 40–60% Health. Consumes Fire Stains to also apply Regen that heals on turn start for 3 turns.",
+    "APCost": 5
+  },
+  {
+    "Name": "Rockslide",
+    "Description": "Deals medium single-target Earth damage (2 hits). Can Break. Consumes Lightning, Ice, and Fire Stains for greatly increased damage.",
+    "APCost": 5
+  },
+  {
+    "Name": "Sky Break",
+    "Description": "Deals extreme damage to all enemies (1 hit). Element depends on which Stains Lune has the most. Can Break.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Storm Caller",
+    "Description": "All enemies receive medium Lightning damage at the end of their turn and low Lightning damage when they receive damage. Duration: 3 turns. Consumes Fire Stains for double thunder strikes on turn end.",
+    "APCost": 6
+  },
+  {
+    "Name": "Terraquake",
+    "Description": "Deals low Earth and Break damage to all enemies every turn. Also increases Break damage received by 50%. Duration: 3 turns. Consumes Lightning Stains to increase duration to 5 turns.",
+    "APCost": 5
+  },
+  {
+    "Name": "Thermal Transfer",
+    "Description": "Deals low single-target Ice damage (2 hits). Gains 4 AP if the target is Burning. Consumes Earth Stains to play a second turn.",
+    "APCost": 2
+  },
+  {
+    "Name": "Thunderfall",
+    "Description": "Deals medium Lightning damage to random enemies (2–6 hits). Critical Hits trigger an additional hit. Consumes Fire Stain for increased damage.",
+    "APCost": 5
+  },
+  {
+    "Name": "Tree of Life",
+    "Description": "Cleanses all Status Effects and Heals all allies.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Tremor",
+    "Description": "Deals high Earth damage to all enemies (1 hit). Removes all enemies' Shields.",
+    "APCost": "Gradient Charge"
+  },
+  {
+    "Name": "Typhoon",
+    "Description": "On turn start, deals high Ice damage to all enemies and Heals allies. Consumes Earth Stains to increase duration from 3 to 5 turns.",
+    "APCost": 8
+  }
+],
+"weapons" : [
+    [
+  {
+    "Name": "Abysseram",
+    "Element": "Physical",
+    "Power": 3228,
+    "Attributes": {"Vitality": "S", "Defense": "A"},
+    "PassiveEffects": {
+      "Lvl4": "50% increased damage on Rank D. No damage increase on other ranks.",
+      "Lvl10": "50% increased Base Attack damage.",
+      "Lvl20": "On Rank D, recover 20% Health with Base Attack."
+    }
+  },
+  {
+    "Name": "Blodam",
+    "Element": "Light",
+    "Power": 3487,
+    "Attributes": {"Defense": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Perfection is now based on current Health. Gain 1 Rank every 20% missing Health.",
+      "Lvl10": "20% increased Light damage with Skills.",
+      "Lvl20": "+1 AP on Rank Up."
+    }
+  },
+  {
+    "Name": "Chevalam",
+    "Element": "Physical",
+    "Power": 3067,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Start battle at Rank S, but can't be Healed or gain Shields.",
+      "Lvl10": "20% increased damage for each consecutive turn without taking damage. Can stack up to 5 times.",
+      "Lvl20": "Apply Rush on Rank S."
+    }
+  },
+  {
+    "Name": "Confuso",
+    "Element": "Light",
+    "Power": 3067,
+    "Attributes": {"Agility": "A", "Luck": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Light damage can Burn on Critical hits.",
+      "Lvl10": "Apply 3 Burn instead of Mark.",
+      "Lvl20": "Increase Burn damage by 50% per Rank, up to 300% on Rank S."
+    }
+  },
+  {
+    "Name": "Contorso",
+    "Element": "Lightning",
+    "Power": 2841,
+    "Attributes": {"Defense": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Switch to Rank S on Break. Base Attack can Break.",
+      "Lvl10": "100% Critical Chance on Rank S.",
+      "Lvl20": "Triggers a lightning strike on Critical hits."
+    }
+  },
+  {
+    "Name": "Corpeso",
+    "Element": "Fire",
+    "Power": 3648,
+    "Attributes": {"Vitality": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Base Attack applies 2 Burn stack per Rank.",
+      "Lvl10": "+1 AP on Rank Up.",
+      "Lvl20": "Increase Burn damage by 50% per Rank, up to 300% on Rank S."
+    }
+  },
+  {
+    "Name": "Cruleram",
+    "Element": "Ice",
+    "Power": 3454,
+    "Attributes": {"Defense": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Don't lose Rank when taking damage from Powerless enemies.",
+      "Lvl10": "+1 Perfection on hitting a Powerless enemy.",
+      "Lvl20": "Apply Powerless on Counterattack."
+    }
+  },
+  {
+    "Name": "Cultam",
+    "Element": "Dark",
+    "Power": 3132,
+    "Attributes": {"Defense": "S", "Agility": "A"},
+    "PassiveEffects": {
+      "Lvl4": "No Perfection loss on damage taken. Perfection is instead lost on being Healed.",
+      "Lvl10": "Gain 2 AP on Counterattack.",
+      "Lvl20": "Gain 1 Rank on Counterattack."
+    }
+  },
+  {
+    "Name": "Danseso",
+    "Element": "Fire",
+    "Power": 2970,
+    "Attributes": {"Agility": "A", "Luck": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Base attack gives 1 Perfection per Burn on target.",
+      "Lvl10": "While Powerful, 20% chance to Burn on hit.",
+      "Lvl20": "+1 AP on Rank Up."
+    }
+  },
+  {
+    "Name": "Delaram",
+    "Element": "Light",
+    "Power": 3390,
+    "Attributes": {"Vitality": "A", "Luck": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Start battle on Rank B, but 50% Health.",
+      "Lvl10": "Recover 15% Health on Base Attack.",
+      "Lvl20": "Apply Powerful on Rank B."
+    }
+  },
+  {
+    "Name": "Demonam",
+    "Element": "Light",
+    "Power": 2809,
+    "Attributes": {"Defense": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Casting a Light Skill increases damage of next Physical Skill cast by 50% and vice versa.",
+      "Lvl10": "20% increased Physical damage with Skills.",
+      "Lvl20": "Dealing Light damage with a Skill recovers 3% Health."
+    }
+  },
+  {
+    "Name": "Dreameso",
+    "Element": "Physical",
+    "Power": 3067,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Gain 1 Rank on Counterattack",
+      "Lvl10": "50% increased Counterattack damage.",
+      "Lvl20": "Gain 2 AP on Counterattack."
+    }
+  },
+  {
+    "Name": "Dualiso",
+    "Element": "Lightning",
+    "Power": 1776,
+    "Attributes": {"Vitality": "A", "Defense": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Play again after a Base Attack.",
+      "Lvl10": "50% increased Base Attack damage.",
+      "Lvl20": "Base Attack gives 4 Perfection."
+    }
+  },
+  {
+    "Name": "Gaulteram",
+    "Element": "Earth",
+    "Power": 3261,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "When hit, lose 1 Perfection instead of 1 rank.",
+      "Lvl10": "Apply Rush on Rank S",
+      "Lvl20": "Gain 2 Perfection on turn start."
+    }
+  },
+  {
+    "Name": "Gesam",
+    "Element": "Physical",
+    "Power": 3228,
+    "Attributes": {"Attribute1": "A", "Attribute2": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Convert Light damage Skills to Physical damage.",
+      "Lvl10": "20% increased Physical damage with Skills.",
+      "Lvl20": "-1 AP cost for Physical Skills."
+    }
+  },
+  {
+    "Name": "Glaceso",
+    "Element": "Ice",
+    "Power": 2873,
+    "Attributes": {"Defense": "A", "Luck": "S"},
+    "PassiveEffects": {
+      "Lvl4": "+1 Perfection on Critical hit.",
+      "Lvl10": "Self-Heal by 2% Health on dealing a Critical hit.",
+      "Lvl20": "Counterattack is always a Critical hit."
+    }
+  },
+  {
+    "Name": "Lanceram",
+    "Element": "Physical",
+    "Power": 3713,
+    "Attributes": {"Vitality": "S", "Agility": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Rank can't be lower than C.",
+      "Lvl10": "Base Attack gives 4 Perfection.",
+      "Lvl20": "Parrying gives 2 Perfection instead of 1."
+    }
+  },
+  {
+    "Name": "Liteso",
+    "Element": "Physical",
+    "Power": 3551,
+    "Attributes": {"Defense": "S", "Agility": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Base Attack consumes all Shields to deal 100% increased damage per Shield.",
+      "Lvl10": "+1 Shield on Counterattack.",
+      "Lvl20": "Base Attack gives 4 Perfection."
+    }
+  },
+  {
+    "Name": "Noahram",
+    "Element": "Physical",
+    "Power": 2260,
+    "Attributes": {"Vitality": "S"},
+    "PassiveEffects": {
+      "Lvl4": "N/A",
+      "Lvl10": "N/A",
+      "Lvl20": "N/A"
+    }
+  },
+  {
+    "Name": "Nosaram",
+    "Element": "Physical",
+    "Power": 3551,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Double Perfection gained on Free Aim shots.",
+      "Lvl10": "Free Aim shots break 2 Shields.",
+      "Lvl20": "50% increased Free Aim damage."
+    }
+  },
+  {
+    "Name": "Sakaram",
+    "Element": "Physical",
+    "Power": 2938,
+    "Attributes": {"Agility": "S", "Luck": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Can't lose Perfection. No damage increase from Rank.",
+      "Lvl10": "50% increased Base Attack damage.",
+      "Lvl20": "Base Attack gives 4 Perfection."
+    }
+  },
+  {
+    "Name": "Seeram",
+    "Element": "Light",
+    "Power": 3713,
+    "Attributes": {"Vitality": "C", "Agility": "B"},
+    "PassiveEffects": {
+      "Lvl4": "-1 to all Perfection gain but can't reach Rank S.",
+      "Lvl10": "Base Attack gives 4 Perfection.",
+      "Lvl20": "20% increased Light damage with Skills."
+    }
+  },
+  {
+    "Name": "Simoso",
+    "Element": "Light",
+    "Power": 3228,
+    "Attributes": {"Vitality": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "An ethereal Sword deals Light damage on any damage dealt with Skills.",
+      "Lvl10": "20% chance to apply Burn on dealing Light damage.",
+      "Lvl20": "Can't die if at least Rank A."
+    }
+  },
+  {
+    "Name": "Sireso",
+    "Element": "Physical",
+    "Power": 2583,
+    "Attributes": {"Vitality": "A", "Agility": "S"},
+    "PassiveEffects": {
+      "Lvl4": "Bonus damage from Perfection applies to all allies at half value. Bonus damage no longer applies to Verso.",
+      "Lvl10": "Perfection gained is increased by 1 while Powerful",
+      "Lvl20": "Support Skills cost 1 less AP."
+    }
+  },
+  {
+    "Name": "Tireso",
+    "Element": "Earth",
+    "Power": 3713,
+    "Attributes": {"Vitality": "S", "Defense": "A"},
+    "PassiveEffects": {
+      "Lvl4": "Gain 1 Rank on applying Mark.",
+      "Lvl10": "Mark an enemy on Base Attack.",
+      "Lvl20": "Apply Powerless on Marking an enemy."
+    }
+  },
+  {
+    "Name": "Verleso",
+    "Element": "Physical",
+    "Power": 3454,
+    "Attributes": {"Vitality": "S"},
+    "PassiveEffects": {
+      "Lvl4": "N/A",
+      "Lvl10": "N/A",
+      "Lvl20": "N/A"
+    }
+  }
+]
+
+  
+  ]
+},
+{
+  "character": "Monoco",
+  "skills": [
+  {
+    "Name": "Abbest Wind",
+    "Description": "Deals low single target Physical damage. 1 hit. Plays a second turn.",
+    "APCost": 2
+  },
+  {
+    "Name": "Aero Slash",
+    "Description": "Deals moderate Wind damage to a single enemy. 1 hit.",
+    "APCost": 3
+  },
+  {
+    "Name": "Healing Breeze",
+    "Description": "Restores a small amount of HP to one ally.",
+    "APCost": 2
+  }
+]
+,
+  "weapons" :[[
+  {
+    "Name": "Ballaro",
+    "Element": "Light",
+    "Power": 3067,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Reverse Bestial Wheel Order.",
+      "Lvl. 10: Using an Upgraded Skill gives 1 AP to all other allies.",
+      "Lvl. 20: Almighty Mask gives 2 AP to all allies."
+    ]
+  },
+  {
+    "Name": "Boucharo",
+    "Element": "Fire",
+    "Power": 3228,
+    "Attributes": {
+      "Agility": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Start battle in Agile Mask.",
+      "Lvl. 10: Agile Mask applies Rush for 3 turns.",
+      "Lvl. 20: +50% Critical Chance while in Agile Mask."
+    ]
+  },
+  {
+    "Name": "Brumaro",
+    "Element": "Physical",
+    "Power": 3390,
+    "Attributes": {
+      "Vitality": "S",
+      "Agility": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Replay instantly when in Almighty Mask.",
+      "Lvl. 10: +3 AP when in Almighty Mask.",
+      "Lvl. 20: Revive instantly with full Health if dead while in Almighty Mask. Once per Battle."
+    ]
+  },
+  {
+    "Name": "Chromaro",
+    "Element": "Ice",
+    "Power": 3390,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Start battle in Caster Mask.",
+      "Lvl. 10: Caster Mask applies Regen for 3 turns.",
+      "Lvl. 20: Skills cost 1 less AP while in Caster Mask."
+    ]
+  },
+  {
+    "Name": "Fragaro",
+    "Element": "Lightning",
+    "Power": 4197,
+    "Attributes": {
+      "Defense": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Free Aim shots spin the Bestial Wheel to a random value.",
+      "Lvl. 10: Free Aim shots deal 100% more damage with all Masks except Almighty.",
+      "Lvl. 20: 100% Critical Chance while in Almighty Mask."
+    ]
+  },
+  {
+    "Name": "Grandaro",
+    "Element": "Earth",
+    "Power": 3551,
+    "Attributes": {
+      "Vitality": "S",
+      "Defense": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Start battle in Heavy Mask.",
+      "Lvl. 10: Heavy Mask applies Shell for 3 turns.",
+      "Lvl. 20: +1 AP per hit taken."
+    ]
+  },
+  {
+    "Name": "Joyaro",
+    "Element": "Lightning",
+    "Power": 3713,
+    "Attributes": {
+      "Defense": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Start battle in Almighty Mask.",
+      "Lvl. 10: 20% increased damage for each consecutive turn without taking damage. Can stack up to 5 times.",
+      "Lvl. 20: Break damage is doubled while in Almighty Mask."
+    ]
+  },
+  {
+    "Name": "Monocaro",
+    "Element": "Physical",
+    "Power": 2744,
+    "Attributes": {
+      "Agility": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Start battle in Balanced Mask.",
+      "Lvl. 10: Balanced Mask applies Powerful for 3 turns.",
+      "Lvl. 20: Critical hits deal 30% more damage while in Balanced Mask."
+    ]
+  },
+  {
+    "Name": "Nusaro",
+    "Element": "Dark",
+    "Power": 4197,
+    "Attributes": {
+      "Vitality": "A",
+      "Agility": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Parries increase the Bestial Wheel by 1. Taking damage resets the Bestial Wheel.",
+      "Lvl. 10: Upgraded Skills deal 30% more damage.",
+      "Lvl. 20: +1 AP on Mask change."
+    ]
+  },
+  {
+    "Name": "Sidaro",
+    "Element": "Dark",
+    "Power": 3035,
+    "Attributes": {
+      "Might": "A",
+      "Luck": "S"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: 30% increased damage per Upgraded Skill used. Resets upon using a non-Upgraded Skill.",
+      "Lvl. 10: Base Attack spins the Bestial Wheel to a random value.",
+      "Lvl. 20: Using an Upgraded Skill gives 1 AP to all other allies."
+    ]
+  },
+  {
+    "Name": "Urnaro",
+    "Element": "Earth",
+    "Power": 3422,
+    "Attributes": {
+      "Vitality": "S",
+      "Luck": "A"
+    },
+    "PassiveEffect": [
+      "Lvl. 4: Switch to Almighty Mask on Breaking an enemy.",
+      "Lvl. 10: Almighty Mask gives 2 AP to all Allies.",
+      "Lvl. 20: 50% increased Break damage."
+    ]
+  }
+]
+]
+}
+]
+
+
+
+
+
+
+
+
